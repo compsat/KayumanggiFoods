@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Goudy Old Style";
+    src: url("../assets/font/GOUDOS.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Goudy Old Style";
+    src: url("../assets/font/GOUDOSB.TTF");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Goudy Old Style";
+    src: url("../assets/font/GOUDOSI.TTF");
+    font-weight: normal;
+    font-style: italic;
+}
+
+html {
+	font-family: "Goudy Old Style", "Times New Roman", serif;
+}
+
+body {
+	background-color: #fff2db;
+	background-image: url("../assets/img/RND-BanigPatternDraft-11062018-Lim.png");
+	background-position: center center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6 {
+	font-family: "Goudy Old Style", serif;
+}
+
+.uk-navbar {
+	background-color: #f4d85d;
+}
+
+.uk-navbar a {
+	color: #8b741a;
+}
+
+.uk-navbar-nav > li > a {
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+	color: #8b741a;
+	background-color: #fee767;
+	outline: 1rem solid #f4d85d;
+	outline-offset: -1rem;
+	padding: 20px 30px 20px 30px;
+}
+
+.uk-navbar-nav > li > a:hover {
+	color: #8b741a;
+	background-color: #fff2db;
+	outline: 1rem solid #f4d85d;
+	outline-offset: -1rem;
+}
+
+.uk-section h1 {
+	font-family: Papyrus, serif;
+	font-size: 3.5rem;
+	line-height: 3.5rem;
+	color: #fecb33;
+	text-shadow: 4px 6px 10px black;
+}
+
+.footer {
+	background-color: #fff2db;
+	padding: 45px 16px 30px 16px;
+}
+
+.footer h2 {
+	font-weight: bold;
+	color: #53585f;
+	line-height: 12px;
+}
+
+.footer > p {
+	font-size: 1.1rem;
+	color: black;
+}
+
+.footer > p > a {
+	text-decoration: underline;
+	color: black;
+}
