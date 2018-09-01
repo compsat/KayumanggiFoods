@@ -118,6 +118,10 @@ h6,
 	color: #85B033;
 }
 
+#wrapper .uk-modal-title h2{
+	font-weight: bold;
+}
+
 #halohalo {
 	margin: auto;
 	max-width: 970px;
