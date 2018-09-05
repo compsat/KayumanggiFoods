@@ -1,4 +1,4 @@
 $(document).ready(function () {
-    $("#navbar-frame").load("kayumanggi-navbar.html");
-    $("#footer-frame").load("kayumanggi-footer.html");
+    $("#navbar-frame").load("pages/kayumanggi-navbar.html");
+    $("#footer-frame").load("pages/kayumanggi-footer.html");
 });
