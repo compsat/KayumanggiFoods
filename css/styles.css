@@ -92,11 +92,33 @@ h6,
 	color: #8b741a;
 }
 
+.uk-container {
+	padding: 28px 84px;
+	padding-right: 0px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.halohalo {
+	padding: 28px 84px;
+	background-color: rgba(219, 242, 252, .5);
+}
+
+.halohalo h1 {
+	color: #1A4689;
+	font-weight: bold;
+}
+
+.halohalo p {
+	font-size: 1.1rem;
+	color: black;
+	text-align: justify;
+}
+
 #wrapper {
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 50px;
-	max-width: 1000px
+	max-width: 1000px;
 }
 
 #wrapper .uk-card {
