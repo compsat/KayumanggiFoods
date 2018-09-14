@@ -169,13 +169,22 @@ h6,
 
 #halohalo {
 	margin: auto;
-	max-width: 970px;
+	max-width: 980px;
 	margin-bottom: 50px;
 }
 
 #halohalo h1 {
 	color: #1A4689;
 	font-weight: bold;
+}
+
+#halohalo p {
+	font-size: 22px;
+}
+
+#halohalo .uk-cover-container {
+	/**width: 300px;
+	height: 320px;*/
 }
 
 .footer {
