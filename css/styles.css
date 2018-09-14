@@ -119,45 +119,77 @@ h6,
 	text-align: justify;
 }
 
-#wrapper {
+.wrapper {
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 50px;
 	max-width: 1000px;
 }
 
-#wrapper .uk-card {
+.wrapper .uk-card {
 	margin: auto;
 	margin-top: 23px;
 }
 
-#wrapper .uk-card h3 {
+.wrapper .uk-card h3 {
 	font-weight: bold;
 }
 
-#wrapper .uk-card-media-top img {
+.wrapper .uk-card-media-top img {
 	border: 1px solid;
 	border-color: #BA7100;
 }
 
-#wrapper .uk-card-footer a {
+.wrapper .uk-card-footer a {
 	text-transform: lowercase;
 	color: #85B033;
 }
 
-#wrapper .uk-modal-title h2{
+.wrapper .uk-modal-title h2 {
 	font-weight: bold;
+}
+
+.location-card .uk-card-media-top img {
+	border: 1px solid;
+	border-color: #ffffff;
+}
+
+#message-banner {
+	margin-bottom: 48px;
+}
+
+#message-form .uk-card-default {
+	background-color: #FFF1D6;
+	border: 7px solid;
+	border-color: #ffffff;
+}
+
+#message-form .uk-card-default h2, h4 {
+	color: #8b741a;
+}
+
+#message-form #message-input input{
+	height: 200px;
 }
 
 #halohalo {
 	margin: auto;
-	max-width: 970px;
+	max-width: 980px;
 	margin-bottom: 50px;
 }
 
 #halohalo h1 {
 	color: #1A4689;
 	font-weight: bold;
+}
+
+#halohalo p {
+	font-size: 22px;
+}
+
+#halohalo .uk-cover-container {
+	/**width: 300px;
+	height: 320px;*/
 }
 
 .footer {
