@@ -103,6 +103,11 @@ h6,
 	background-color: rgba(219, 242, 252, .5);
 }
 
+.companypage {
+	padding: 28px 84px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
 .halohalo h1 {
 	color: #1A4689;
 	font-weight: bold;
