@@ -168,8 +168,15 @@ h6,
 	color: #8b741a;
 }
 
-#message-form #message-input input{
-	height: 200px;
+#message-us {
+	height: 150px;
+    resize: none;
+}
+
+#message-form .uk-button {
+	margin-top: 20px;
+	background-color: #ffffff;
+	color: #8b741a;
 }
 
 #halohalo {
