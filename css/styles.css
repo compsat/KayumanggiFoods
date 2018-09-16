@@ -46,6 +46,10 @@ h6,
 	font-family: "Goudy Old Style", serif;
 }
 
+.uk-hidden .uk-navbar-container {
+	background-color: #f4d85d;
+}
+
 .uk-navbar {
 	background-color: #f4d85d;
 }
@@ -71,14 +75,6 @@ h6,
 	outline-offset: -1rem;
 }
 
-.uk-section h1 {
-	font-family: Papyrus, serif;
-	font-size: 3.5rem;
-	line-height: 3.5rem;
-	color: #fecb33;
-	text-shadow: 4px 6px 10px black;
-}
-
 .banner {
 	padding-top: 28px;
 	padding-bottom: 2px;
@@ -92,15 +88,14 @@ h6,
 	color: #8b741a;
 }
 
-.uk-container {
+.container {
 	padding: 28px 84px;
-	padding-right: 0px;
+	padding-right: 84px;
 	background-color: rgba(255, 255, 255, .5);
 }
 
-.halohalo {
-	padding: 28px 84px;
-	background-color: rgba(219, 242, 252, .5);
+.uk-divider-icon {
+	background-color: #8b741a;
 }
 
 .companypage {
@@ -108,12 +103,22 @@ h6,
 	background-color: rgba(255, 255, 255, .5);
 }
 
+.companypage h1 {
+	color: #8b741a;
+	font-weight: bold;
+}
+
+.halohalo {
+	padding: 28px 84px;
+	background-color: rgba(219, 242, 252, .5);
+}
+
 .halohalo h1 {
 	color: #1A4689;
 	font-weight: bold;
 }
 
-.halohalo p {
+.halohalo p, .companypage p {
 	font-size: 1.1rem;
 	color: black;
 	text-align: justify;
@@ -152,6 +157,13 @@ h6,
 .location-card .uk-card-media-top img {
 	border: 1px solid;
 	border-color: #ffffff;
+}
+
+.uk-button-default {
+	background-color: rgb(222, 211, 190);
+	color: rgb(146, 72, 22);
+	font-family: Arial, sans-serif;
+	font-weight: bold;
 }
 
 #message-banner {
@@ -200,8 +212,8 @@ h6,
 }
 
 #logo {
-	width: 45%;
-	padding-top: 30px;
+	width: 250px;
+	padding-top: 35px;
 }
 
 .footer {
