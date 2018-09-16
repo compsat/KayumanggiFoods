@@ -192,6 +192,11 @@ h6,
 	height: 320px;*/
 }
 
+#logo {
+	width: 45%;
+	padding-top: 30px;
+}
+
 .footer {
 	background-color: #fff2db;
 	padding: 45px 16px 30px 16px;
