@@ -11,7 +11,30 @@
 </head>
 <body>
 	<!-- Navbar -->
-	<div uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
+	<!-- Hidden on tablets and larger -->
+	<nav class="uk-navbar-container uk-hidden@m" uk-navbar="dropbar: true; dropbar-mode: push">
+	    <div class="uk-navbar-left">
+	    	<ul class="uk-navbar-nav">
+	    		<li>
+	    			<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+		        	<div class="uk-navbar-dropdown">
+		        	<ul class="uk-nav uk-navbar-dropdown-nav">
+		        		<li><a href="/index.html">Home</a></li>
+		        		<li><a href="pages/our-company.html">Our Company</a></li>
+		        		<li><a href="pages/our-products.html">Our Products</a></li>
+						<li><a href="pages/locations.html">Locations</a></li>
+		        	</ul>
+		        	</div>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <div class="uk-navbar-right">
+	    	<a href="/index.html" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo.png"></a>
+	    </div>
+	</nav>
+
+	<!-- Visible on tablets and larger -->
+	<div class="uk-visible@m" uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
 		<nav class="uk-navbar">
 			<div class="uk-navbar-center">
 				<div class="uk-navbar-center-left"><div>
@@ -20,7 +43,7 @@
 						<li><a href="pages/our-company.html">Our Company</a></li>
 					</ul>
 				</div></div>
-				<a href="" class="uk-navbar-item uk-logo">Kayumanggi Logo</a>
+				<a href="/index.html" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo.png"></a>
 				<div class="uk-navbar-center-right"><div>
 					<ul class="uk-navbar-nav">
 						<li><a href="pages/our-products.html">Our Products</a></li>
@@ -35,26 +58,20 @@
 
 	<div class="uk-section">
 		<div class="uk-inline">
-		    <img src="assets/img/all-fruits-with-shadow-Edit-2.png" alt="fruits">
-		    <div class="uk-overlay uk-position-top">
-		    	<h1>
-		    		&emsp;Sweets bring back<br>
-		    		&emsp;&emsp;&ensp;&nbsp;memories of home...
-		    	</h1>
-		    </div>
+		    <img src="assets/img/banner.png" alt="fruits">
 		</div>
 	</div>
 	
-	<div class="uk-container">
-		<div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+	<div class="container">
+		<div class="uk-grid-match uk-child-width-expand@s" uk-grid>
 			<div>
 		        <div class="uk-card uk-card-default uk-card-small uk-width-medium">
 		            <div class="uk-card-media-top">
-		                <img src="assets/img/product1.png" alt="">
+		                <img src="assets/img/company-1.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body uk-text-center">
 		                <h3 class="uk-card-title">Our Company</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+		                <p>Know more about us.</p>
 		            </div>
 		            <div class="uk-card-footer">
 				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-company.html">Learn More</a>
@@ -65,11 +82,11 @@
 			<div>
 		        <div class="uk-card uk-card-default uk-card-small uk-width-medium">
 		            <div class="uk-card-media-top">
-		                <img src="assets/img/product1.png" alt="">
+		                <img src="assets/img/our-products.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body uk-text-center">
 		                <h3 class="uk-card-title">Our Products</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+		                <p>Check out our products.</p>
 		            </div>
 		            <div class="uk-card-footer">
 				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-products.html">Learn More</a>
@@ -80,11 +97,11 @@
 			<div>
 		        <div class="uk-card uk-card-default uk-card-small uk-width-medium">
 		            <div class="uk-card-media-top">
-		                <img src="assets/img/product1.png" alt="">
+		                <img src="assets/img/company-3.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body uk-text-center">
-		                <h3 class="uk-card-title">Our Location</h3>
-		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+		                <h3 class="uk-card-title">Our Locations</h3>
+		                <p>Know where to find us.</p>
 		            </div>
 		            <div class="uk-card-footer">
 				        <a class="uk-button uk-button-default uk-align-center" href="pages/locations.html">Learn More</a>
@@ -95,16 +112,10 @@
 	</div>
 
 	<div class="halohalo">
-		<div class="uk-grid-match uk-grid-small" uk-grid>
-			<div class="uk-width-1-5@m uk-width-1-3@l">
-				<!-- insert image here -->
-			</div>
-			<div class="uk-width-3-5@m uk-width-2-3@l">
-				<h1 class="uk-article-title">Francisco’s Halo Halo</h1>
-				<p>Francisco’s Halo-halo is a Filipino dessert food stall that offers authentic Halo-Halo and various refreshments on-the-go with the aim of providing a taste of the Philippines’ finest fruit preserves mixed in a cup made right in front of its customer. With the presernce of the Filipinos’ sweet tooth, Francisco’s envisions to cater autherntic Filipino dessert that is on-the-go, accessible, and quality filled.</p>
-				<p>Visit our page: <a href="http://www.facebook.com/FranciscosHaloHalo">www.facebook.com/FranciscosHaloHalo</a></p>
-			</div>
-		</div>
+		<img class="uk-align-left@m" src="assets/img/halohalo-logo.png" width="280px" alt="Francisco's Halo Halo">
+		<h1 class="uk-article-title">Francisco’s Halo Halo</h1>
+		<p>Francisco’s Halo-halo is a Filipino dessert food stall that offers authentic Halo-Halo and various refreshments on-the-go with the aim of providing a taste of the Philippines’ finest fruit preserves mixed in a cup made right in front of its customer. With the presernce of the Filipinos’ sweet tooth, Francisco’s envisions to cater autherntic Filipino dessert that is on-the-go, accessible, and quality filled.</p>
+		<p>Visit our page: <a href="http://www.facebook.com/FranciscosHaloHalo">www.facebook.com/FranciscosHaloHalo</a></p>
 	</div>
 
 	<!-- Footer -->
