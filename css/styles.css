@@ -25,8 +25,8 @@ html {
 
 body {
 	background-color: #fff2db;
-	background-image: url("../assets/img/banig-bg.jpg");
-	background-position: center center;
+	background-image: url("../assets/img/banig-bg-new.jpg");
+	background-position: bottom left;
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -46,6 +46,18 @@ h6,
 	font-family: "Goudy Old Style", serif;
 }
 
+p {
+	margin: 0 0 1rem 0;
+}
+
+.uk-divider-icon {
+	background-image: url("../assets/img/div-icon.svg");
+}
+
+.uk-divider-icon::after, .uk-divider-icon::before {
+	border-bottom: 2px solid #8b741a
+}
+
 .uk-hidden .uk-navbar-container {
 	background-color: #f4d85d;
 }
@@ -62,6 +74,7 @@ h6,
 	font-family: Arial, sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
+	letter-spacing: 0.1rem;
 	color: #8b741a;
 	background-color: #fee767;
 	outline: 1rem solid #f4d85d;
@@ -74,6 +87,24 @@ h6,
 	background-color: #fff2db;
 	outline: 1rem solid #f4d85d;
 	outline-offset: -1rem;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent), 
+.uk-navbar-dropbar, 
+.uk-navbar-dropdown  {
+	background-color: #f4d85d;
+}
+
+.uk-navbar-dropdown li > a {
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	color: #8b741a;
+}
+
+.uk-navbar-dropdown li > a:hover {
+	color: #fff2db;
 }
 
 .banner {
@@ -95,24 +126,6 @@ h6,
 	background-color: rgba(255, 255, 255, .5);
 }
 
-.uk-divider-icon {
-	background-color: #8b741a;
-}
-
-.companypage {
-	padding: 28px 84px;
-	background-color: rgba(255, 255, 255, .5);
-}
-
-.companypage p {
-	font-size: 2rem;
-}
-
-.companypage h1 {
-	color: #8b741a;
-	font-weight: bold;
-}
-
 .halohalo {
 	padding: 28px 84px;
 	background-color: rgba(219, 242, 252, .5);
@@ -123,10 +136,27 @@ h6,
 	font-weight: bold;
 }
 
-.halohalo p, .companypage p {
+.halohalo p {
 	font-size: 1.1rem;
 	color: black;
 	text-align: justify;
+}
+
+.companypage {
+	padding: 28px 84px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.companypage p {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #1f2020;
+	text-align: justify;
+}
+
+.companypage h1 {
+	color: #8b741a;
+	font-weight: bold;
 }
 
 .uk-card-title {
