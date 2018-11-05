@@ -6,17 +6,17 @@
     			<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
 	        	<div class="uk-navbar-dropdown">
 	        	<ul class="uk-nav uk-navbar-dropdown-nav">
-	        		<li><a href="/index.html">Home</a></li>
-	        		<li><a href="/pages/our-company.html">Company</a></li>
-	        		<li><a href="/pages/our-products.html">Products</a></li>
-					<li><a href="/pages/locations.html">Locations</a></li>
+	        		<li><a href="../index.php">Home</a></li>
+	        		<li><a href="our-company.php">Company</a></li>
+	        		<li><a href="our-products.php">Products</a></li>
+					<li><a href="locations.php">Locations</a></li>
 	        	</ul>
 	        	</div>
     		</li>
     	</ul>
     </div>
     <div class="uk-navbar-right">
-    	<a href="/index.html" class="uk-navbar-item uk-logo"><img id="logo" src="../assets/img/logo-border.png"></a>
+    	<a href="../index.php" class="uk-navbar-item uk-logo"><img id="logo" src="../assets/img/logo-border.png"></a>
     </div>
 </nav>
 
@@ -26,15 +26,15 @@
 		<div class="uk-navbar-center">
 			<div class="uk-navbar-center-left uk-visible@m"><div>
 				<ul class="uk-navbar-nav">
-		            <li><a href="/index.html">Home</a></li>
-		            <li><a href="/pages/our-company.html">Company</a></li>
+		            <li><a href="../index.php">Home</a></li>
+		            <li><a href="our-company.php">Company</a></li>
 		        </ul>
 			</div></div>
-	        <a href="/index.html" class="uk-navbar-item uk-logo"><img id="logo" src="../assets/img/logo-border.png"></a>
+	        <a href="../index.php" class="uk-navbar-item uk-logo"><img id="logo" src="../assets/img/logo-border.png"></a>
 	        <div class="uk-navbar-center-right uk-visible@m"><div>
 	        	<ul class="uk-navbar-nav">
-		        	<li><a href="/pages/our-products.html">Products</a></li>
-		            <li><a href="/pages/locations.html">Locations</a></li>
+		        	<li><a href="our-products.php">Products</a></li>
+		            <li><a href="locations.php">Locations</a></li>
 		        </ul>
 	        </div></div>
 		</div>

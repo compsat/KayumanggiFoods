@@ -1,3 +1,51 @@
+<?php
+	$errName = '';
+	$errEmail = '';
+	$errSubject = '';
+	$errMessage = '';
+	$result = '';
+	
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email_from = $_POST['email_from'];
+		$message = $_POST['message'];
+		$from = 'Kayumanggi Foods Contact Form'; 
+		$to = 'info@kayumanggifoods.com'; 
+		$subject = $_POST['subject'];;
+		
+		$body = "From: $name\n E-Mail: $email_from\n Message:\n $message";
+
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name.';
+		}
+		
+		// Check if email has been entered and is valid
+		if (!$_POST['email_from'] || !filter_var($_POST['email_from'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address.';
+		}
+
+		//Check if subject has been entered
+		if (!$_POST['subject']) {
+			$errSubject = 'Please enter a subject.';
+		}
+		
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message.';
+		}
+
+		// If there are no errors, send the email
+		if ($errName == '' && $errEmail == '' && $errMessage == '') {
+			if (mail ($to, $subject, $body)) {
+				$result='<div class="uk-alert-success" uk-alert>Thank you for contacting us! We will be in touch with you very soon.</div>';
+			} else {
+				$result='<div class="uk-alert-warning" uk-alert>Sorry! There was an error sending your message. Please try again.</div>';
+			}
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,34 +108,42 @@
 		<div id="message-form">
 	        <div class="uk-card uk-card-default uk-card-small uk-width-xxlarge">
 	            <div class="uk-card-body">
+	            	<?php echo $result; ?>	
 	                <h2>Leave a message:</h2>
-	                <form class="uk-grid-small" uk-grid>
+	                <form class="uk-grid-small" uk-grid role="form" method="post" action="locations.php">
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Name:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
-	                		<input class="uk-input" type="text" placeholder="">
+	                		<input class="uk-input" type="text" name="name" placeholder="">
+	                		<?php echo "<p class='uk-text-danger'>$errName</p>";?>
 	                	</div>
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Email Address:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
-	                		<input class="uk-input" type="text" placeholder="">
+	                		<input class="uk-input" type="text" name="email_from" placeholder="">
+	                		<?php echo "<p class='uk-text-danger'>$errEmail</p>";?>
 	                	</div>
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Subject:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
-	                		<input class="uk-input" type="text" placeholder="">
+	                		<input class="uk-input" type="text" name="subject" placeholder="">
+	                		<?php echo "<p class='uk-text-danger'>$errSubject</p>";?>
 	                	</div>
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Message:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
-	                		<textarea class="uk-textarea" id="message-us"></textarea>
+	                		<textarea class="uk-textarea" id="message-us" name="message"></textarea>
+	                		<?php echo "<p class='uk-text-danger'>$errMessage</p>";?>
                 		</div>
+                		<div class="uk-width-4-4@s">
+	                		<button class="uk-button uk-button-default uk-align-right" name="submit">Submit</button>
+	                	</div>
 	                </form>
-	                <button class="uk-button uk-button-default uk-align-right">Submit</button>
+	                
 	            </div>
 	        </div>
     	</div>

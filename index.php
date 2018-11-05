@@ -19,17 +19,17 @@
 	    			<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
 		        	<div class="uk-navbar-dropdown">
 		        	<ul class="uk-nav uk-navbar-dropdown-nav">
-		        		<li><a href="/index.html">Home</a></li>
-		        		<li><a href="pages/our-company.html">Company</a></li>
-		        		<li><a href="pages/our-products.html">Products</a></li>
-						<li><a href="pages/locations.html">Locations</a></li>
+		        		<li><a href="#">Home</a></li>
+		        		<li><a href="pages/our-company.php">Company</a></li>
+		        		<li><a href="pages/our-products.php">Products</a></li>
+						<li><a href="pages/locations.php">Locations</a></li>
 		        	</ul>
 		        	</div>
 	    		</li>
 	    	</ul>
 	    </div>
 	    <div class="uk-navbar-right">
-	    	<a href="/index.html" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo-border.png"></a>
+	    	<a href="#" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo-border.png"></a>
 	    </div>
 	</nav>
 
@@ -39,15 +39,15 @@
 			<div class="uk-navbar-center">
 				<div class="uk-navbar-center-left"><div>
 					<ul class="uk-navbar-nav">
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="pages/our-company.html">Company</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="pages/our-company.php">Company</a></li>
 					</ul>
 				</div></div>
-				<a href="/index.html" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo-border.png"></a>
+				<a href="#" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo-border.png"></a>
 				<div class="uk-navbar-center-right"><div>
 					<ul class="uk-navbar-nav">
-						<li><a href="pages/our-products.html">Products</a></li>
-						<li><a href="pages/locations.html">Locations</a></li>
+						<li><a href="pages/our-products.php">Products</a></li>
+						<li><a href="pages/locations.php">Locations</a></li>
 					</ul>
 				</div></div>
 			</div>
@@ -74,7 +74,7 @@
 		                <p>Know more about Kayumanggi Tropical Foods Inc.</p>
 		            </div>
 		            <div class="uk-card-footer">
-				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-company.html">Learn More</a>
+				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-company.php">Learn More</a>
 				    </div>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 		                <p>Discover Kayumanggi’s full line of fruit preserves and food products.</p>
 		            </div>
 		            <div class="uk-card-footer">
-				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-products.html">Learn More</a>
+				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-products.php">Learn More</a>
 				    </div>
 				</div>
 			</div>
@@ -104,7 +104,7 @@
 		                <p>Know more about our store locations and contact us!</p>
 		            </div>
 		            <div class="uk-card-footer">
-				        <a class="uk-button uk-button-default uk-align-center" href="pages/locations.html">Learn More</a>
+				        <a class="uk-button uk-button-default uk-align-center" href="pages/locations.php">Learn More</a>
 				    </div>
 				</div>
 			</div>
@@ -119,7 +119,15 @@
 	</div>
 
 	<!-- Footer -->
-	<div id="footer-frame"></div>
+	<div class="footer">
+		<h2>Contact Us!</h2>
+		<p>
+			<span uk-icon="icon: mail"></span> <a href="mailto:info@kayumanggifoods.com">info@kayumanggifoods.com</a><br>
+			<span uk-icon="icon: receiver"></span> +6349 567 1973<br>
+			<span uk-icon="icon: receiver"></span> (Fax) +6349 567 1199<br>
+			<span uk-icon="icon: home"></span> 35 Maharlika Highway, Brgy. San Juan, Alaminos, Laguna, Philippines 4001
+		</p>
+	</div>
 
 	<!-- UIkit JS -->
 	<script type="text/javascript" src="js/uikit.min.js"></script>
