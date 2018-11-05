@@ -71,6 +71,7 @@ p {
 }
 
 .uk-navbar-nav > li > a {
+	width: 200px;
 	font-family: Arial, sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
@@ -89,10 +90,18 @@ p {
 	outline-offset: -1rem;
 }
 
+.uk-navbar-nav .uk-navbar-toggle {
+	width: auto;
+}
+
 .uk-navbar-container:not(.uk-navbar-transparent), 
 .uk-navbar-dropbar, 
 .uk-navbar-dropdown  {
 	background-color: #f4d85d;
+}
+
+.uk-navbar-dropdown {
+	width: 0px;
 }
 
 .uk-navbar-dropdown li > a {
@@ -122,7 +131,6 @@ p {
 
 .container {
 	padding: 28px 84px;
-	padding-right: 84px;
 	background-color: rgba(255, 255, 255, .5);
 }
 
