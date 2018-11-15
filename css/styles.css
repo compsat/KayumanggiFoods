@@ -141,7 +141,8 @@ p {
 }
 
 .halohalo {
-	padding: 28px 280px;
+	padding: 28px 84px;
+	padding-bottom: 80px;
 	background-color: rgba(219, 242, 252, .5);
 }
 
