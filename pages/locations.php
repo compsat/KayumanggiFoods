@@ -69,7 +69,7 @@
 
 	<!-- LOCATIONS -->
 	<section class="wrapper">
-		<div class="uk-child-width-1-2@s" uk-grid>
+		<div class="uk-child-width-1-2@s" uk-grid uk-height-match="target: > div > .uk-card">
 
 			<div class="location-card">
 		        <div class="uk-card uk-card-default uk-card-small uk-width-large">
@@ -79,6 +79,7 @@
 		            <div class="uk-card-body">
 		                <h3 class="uk-card-title">Alaminos, Laguna Branch</h3>
 		                <p>35 Maharlika Highway, Brgy. San Juan, Alaminos, Laguna, Philippines 4001</p>
+		                <p>Tel.# +6349 567 1972</p>
 		            </div>
 		        </div>
 	    	</div>

@@ -39,7 +39,7 @@
 		    </ul>
 		    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
 		    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-		    <div class="uk-position-bottom-center uk-position-small">
+		    <div class="uk-position-bottom-center uk-position-small uk-visible@m">
 	            <ul class="uk-thumbnav">
 	                <li uk-slideshow-item="0"><a href="#"><img src="../assets/img/company-1.jpg" width="100" alt=""></a></li>
 	                <li uk-slideshow-item="1"><a href="#"><img src="../assets/img/company-2.jpg" width="100" alt=""></a></li>
@@ -84,7 +84,7 @@
 			</div>
 			<div class="uk-width-3-5@m uk-width-2-3@l">
 				<p>
-					Kayumanggi Tropical Foods Inc. envisions be the premier global source of preserved Philippine tropical fruits that would let every Filipino around the globe savor the tropical flavors of native fruits all year round.
+					Kayumanggi Tropical Foods Inc. envisions to be the premier global source of preserved Philippine tropical fruits that would let every Filipino around the globe savor the tropical flavors of native fruits all year round.
 				</p>
 			</div>
 		</div>

@@ -12,7 +12,7 @@
 <body>
 	<!-- Navbar -->
 	<!-- Hidden on tablets and larger -->
-	<nav class="uk-navbar-container uk-hidden@m" uk-navbar="dropbar: true; dropbar-mode: push">
+	<nav class="uk-navbar-container uk-hidden@m" uk-navbar="dropbar: true; dropbar-mode: push" uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
 	    <div class="uk-navbar-left">
 	    	<ul class="uk-navbar-nav">
 	    		<li>
@@ -28,8 +28,8 @@
 	    		</li>
 	    	</ul>
 	    </div>
-	    <div class="uk-navbar-right">
-	    	<a href="#" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo-border.png"></a>
+	    <div class="uk-navbar-center">
+	    	<a href="#" class="uk-navbar-item uk-logo"><img id="logo-small" src="assets/img/logo-border.png"></a>
 	    </div>
 	</nav>
 
@@ -115,7 +115,7 @@
 		<img class="uk-align-left@m" src="assets/img/halohalo-logo.png" width="280px" alt="Francisco's Halo Halo">
 		<h1 class="uk-article-title">Francisco’s Halo Halo</h1>
 		<p>Francisco’s Halo-halo is a Filipino dessert food stall that offers authentic Halo-Halo and various refreshments on-the-go with the aim of providing a taste of the Philippines’ finest fruit preserves mixed in a cup made right in front of its customer. With the presernce of the Filipinos’ sweet tooth, Francisco’s envisions to cater autherntic Filipino dessert that is on-the-go, accessible, and quality filled.</p>
-		<p>Visit our page: <a href="http://www.facebook.com/FranciscosHaloHalo">www.facebook.com/FranciscosHaloHalo</a></p>
+		<p id="visit">Visit our page: <a href="http://www.facebook.com/FranciscosHaloHalo">www.facebook.com/FranciscosHaloHalo</a></p>
 	</div>
 
 	<!-- Footer -->

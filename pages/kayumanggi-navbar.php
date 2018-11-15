@@ -1,5 +1,5 @@
 <!-- Hidden on tablets and larger -->
-<nav class="uk-navbar-container uk-hidden@m" uk-navbar="dropbar: true; dropbar-mode: push">
+<nav class="uk-navbar-container uk-hidden@m" uk-navbar="dropbar: true; dropbar-mode: push" uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
     <div class="uk-navbar-left">
     	<ul class="uk-navbar-nav">
     		<li>
@@ -15,8 +15,8 @@
     		</li>
     	</ul>
     </div>
-    <div class="uk-navbar-right">
-    	<a href="../index.php" class="uk-navbar-item uk-logo"><img id="logo" src="../assets/img/logo-border.png"></a>
+    <div class="uk-navbar-center">
+    	<a href="../index.php" class="uk-navbar-item uk-logo"><img id="logo-small" src="../assets/img/logo-border.png"></a>
     </div>
 </nav>
 
