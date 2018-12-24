@@ -38,7 +38,7 @@
 						    	<button class="uk-modal-close-default" type="button" uk-close></button>
 						    	<img class="uk-align-left uk-margin-remove-adjacent" src="../assets/img/whitebeans.png">
 						        <h2 class="uk-modal-title">White Beans</h2>
-						        <p>White Beans, sourced from the blossoming plants of the legume family, (is a light-colored and kidney-shaped bean) known for its abundance in protein and minerals. Sweetened and preserved White Beans is often a main ingredient in salads, spreads, and desserts. Partnered with Red Mongo and Garbanzos, White Beans is a primary ingredient of Filipino Halo-halo dessert.</p>
+						        <p>White Beans, sourced from the blossoming plants of the legume family, is a light-colored and kidney-shaped bean known for its abundance in protein and minerals. Sweetened and preserved White Beans is often a main ingredient in salads, spreads, and desserts. Partnered with Red Mongo and Garbanzos, White Beans is a primary ingredient of Filipino Halo-halo dessert.</p>
 						        <p>Packed in bottled jars (sizes 12 oz. and 32 oz.) and pouches (500g and 1000g).</p>
 						    </div>
 						</div>
@@ -101,7 +101,7 @@
 		            </div>
 		            <div class="uk-card-body">
 		                <h3 class="uk-card-title">Kaong</h3>
-		                <p>Kaong, Philippine’s sweet palm fruit, is a translucent, chewy, and jellybean shaped fruit...</p>
+		                <p>Kaong, Philippines' sweet palm fruit, is a translucent, chewy, and jellybean shaped fruit...</p>
 		            </div>
 		            <div class="uk-card-footer">
 				        <a href="#modal-kaong" class="uk-button uk-button-text" uk-toggle>read more...</a>
@@ -110,7 +110,7 @@
 						    	<button class="uk-modal-close-default" type="button" uk-close></button>
 						    	<img class="uk-align-left uk-margin-remove-adjacent" src="../assets/img/kaong.png">
 						        <h2 class="uk-modal-title">Kaong</h2>
-						        <p>Kaong, Philippine’s sweet palm fruit, is a translucent, chewy, and jellybean shaped fruit sourced from Philippine’s own sugar palm trees. Sweetened and preserved Kaong in colors white, green, and red is widely used to add great flavor, festive colors, and nutritional value in fruit salads, Filipino halo-halo desserts, and pastries and pies with fruit toppings.</p>
+						        <p>Kaong, Philippines' sweet palm fruit, is a translucent, chewy, and jellybean shaped fruit sourced from Philippines' own sugar palm trees. Sweetened and preserved Kaong in colors white, green, and red is widely used to add great flavor, festive colors, and nutritional value in fruit salads, Filipino halo-halo desserts, and pastries and pies with fruit toppings.</p>
 						        <p>Packed in bottled jars (sizes 12 oz. and 32 oz.) and pouches (500g and 1000g).</p>
 						    </div>
 						</div>
@@ -158,7 +158,7 @@
 						    	<button class="uk-modal-close-default" type="button" uk-close></button>
 						    	<img class="uk-align-left uk-margin-remove-adjacent" src="../assets/img/natadecoco.png">
 						        <h2 class="uk-modal-title">Nata De Coco</h2>
-						        <p>Nata De Coco, a coconut gelatin, is a chewy and translucent jelly-like food product cultured from coconut water. Sweetened and preserved Nata de Coco in colors white, red, and green is widely used to add sweet flavor, chewiness, and festive colors in Filipino Halo-halo, fruit salads, fruit shakes, gelatin cakes, ice creams, yoghurts, juice, softdrinks, and cream-based desserts. Nata de Coco, a favorite of many, can also be consumed on its own as a dessert or a sweet snack.</p>
+						        <p>Nata De Coco, a coconut gelatin, is a chewy and translucent jelly-like food product cultured from coconut water. Sweetened and preserved Nata de Coco in colors white, red, and green is widely used to add sweet flavor, chewiness, and festive colors in Filipino Halo-halo, fruit salads, fruit shakes, gelatin cakes, ice creams, yoghurts, juice, and cream-based desserts. Nata de Coco, a favorite of many, can also be consumed on its own as a dessert or a sweet snack.</p>
 						        <p>Packed in bottled jars (sizes 12 oz. and 32 oz.) and pouches (500g and 1000g).</p>
 						    </div>
 						</div>
@@ -255,7 +255,7 @@
 						    	<img class="uk-align-left uk-margin-remove-adjacent" src="../assets/img/ube.png">
 						        <h2 class="uk-modal-title">Ube Yam (Purple Yam)</h2>
 						        <p>Ube Yam, also known as purple yam, is a famous Filipino dessert widely recognized for its distinctive hue and subtle sweet taste. Sweetened and preserved Ube Yam is a main ingredient and flavor in cakes, ice cream, tarts, cupcakes, pies, candies, and milkshakes. Its purple color and distinct Ube flavor makes it a primary ingredient in Filipino Halo-halo desserts. The Ube flavor is also best paired with Macapuno in various desserts and delicacies.</p>
-						        <p>Packed in bottled jars (sizes 12 oz. and 32 oz.).</p>
+						        <p>Packed in bottled jars (sizes 12 oz. and 32 oz.) and pouches.</p>
 						    </div>
 						</div>
 				    </div>
@@ -322,7 +322,7 @@
 			    <div>
 			        <div class="uk-card-body">
 			            <h1 class="uk-article-title">Francisco’s Halo Halo</h1>
-			            <p>Francisco’s Halo-halo is a Filipino dessert food stall that offers authentic Halo-Halo and various refreshments on-the-go with the aim of providing a taste of the Philippines’ finest fruit preserves mixed in a cup made right in front of its customer. With the presernce of the Filipinos’ sweet tooth, Francisco’s envisions to cater autherntic Filipino dessert that is on-the-go, accessible, and quality filled.</p>
+			            <p>Francisco’s Halo-halo is a Filipino dessert food stall that offers authentic Halo-Halo and various refreshments on-the-go with the aim of providing a taste of the Philippines’ finest fruit preserves mixed in a cup made right in front of its customer. With the presence of the Filipinos’ sweet tooth, Francisco’s envisions to cater authentic Filipino dessert that is on-the-go, accessible, and quality filled.</p>
 			        </div>
 			    </div>
 			</div>
