@@ -6,17 +6,17 @@
     			<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
 	        	<div class="uk-navbar-dropdown">
 	        	<ul class="uk-nav uk-navbar-dropdown-nav">
-	        		<li><a href="../index.php">Home</a></li>
-	        		<li><a href="our-company.php">Company</a></li>
-	        		<li><a href="our-products.php">Products</a></li>
-					<li><a href="locations.php">Locations</a></li>
+	        		<li><a href="/">Home</a></li>
+	        		<li><a href="/our-company">Company</a></li>
+	        		<li><a href="/our-products">Products</a></li>
+					<li><a href="/locations">Locations</a></li>
 	        	</ul>
 	        	</div>
     		</li>
     	</ul>
     </div>
     <div class="uk-navbar-center">
-    	<a href="../index.php" class="uk-navbar-item uk-logo"><img id="logo-small" src="../assets/img/logo-border.png"></a>
+    	<a href="/" class="uk-navbar-item uk-logo"><img id="logo-small" src="/assets/img/logo-border.png"></a>
     </div>
 </nav>
 
@@ -26,15 +26,15 @@
 		<div class="uk-navbar-center">
 			<div class="uk-navbar-center-left uk-visible@m"><div>
 				<ul class="uk-navbar-nav">
-		            <li><a href="../index.php">Home</a></li>
-		            <li><a href="our-company.php">Company</a></li>
+		            <li><a href="/">Home</a></li>
+		            <li><a href="/our-company">Company</a></li>
 		        </ul>
 			</div></div>
-	        <a href="../index.php" class="uk-navbar-item uk-logo"><img id="logo" src="../assets/img/logo-border.png"></a>
+	        <a href="/" class="uk-navbar-item uk-logo"><img id="logo" src="/assets/img/logo-border.png"></a>
 	        <div class="uk-navbar-center-right uk-visible@m"><div>
 	        	<ul class="uk-navbar-nav">
-		        	<li><a href="our-products.php">Products</a></li>
-		            <li><a href="locations.php">Locations</a></li>
+		        	<li><a href="/our-products">Products</a></li>
+		            <li><a href="/locations">Locations</a></li>
 		        </ul>
 	        </div></div>
 		</div>

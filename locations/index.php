@@ -5,39 +5,46 @@
 	$errMessage = '';
 	$result = '';
 	
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email_from = $_POST['email_from'];
-		$message = $_POST['message'];
+	if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["submit"])) {
+		// Sanitize inputs
+		$name = htmlspecialchars(trim($_POST['name']));
+		$email_from = filter_var(trim($_POST['email_from']), FILTER_SANITIZE_EMAIL);
+		$message = htmlspecialchars(trim($_POST['message']));
+		$subject = htmlspecialchars(trim($_POST['subject']));
+
 		$from = 'Kayumanggi Foods Contact Form'; 
 		$to = 'info@kayumanggifoods.com'; 
-		$subject = $_POST['subject'];;
 		
 		$body = "From: $name\n E-Mail: $email_from\n Message:\n $message";
 
 		// Check if name has been entered
-		if (!$_POST['name']) {
+		if (empty($name)) {
 			$errName = 'Please enter your name.';
 		}
 		
 		// Check if email has been entered and is valid
-		if (!$_POST['email_from'] || !filter_var($_POST['email_from'], FILTER_VALIDATE_EMAIL)) {
+		if (empty($email_from) || !filter_var($email_from, FILTER_VALIDATE_EMAIL)) {
 			$errEmail = 'Please enter a valid email address.';
 		}
 
 		//Check if subject has been entered
-		if (!$_POST['subject']) {
+		if (empty($subject)) {
 			$errSubject = 'Please enter a subject.';
 		}
 		
 		//Check if message has been entered
-		if (!$_POST['message']) {
+		if (empty($message)) {
 			$errMessage = 'Please enter your message.';
+		}
+
+		// Prevent header injection
+		if (preg_match("/[\r\n]/", $name) || preg_match("/[\r\n]/", $email_from) || preg_match("/[\r\n]/", $subject)) {
+			die('Header injection detected.');
 		}
 
 		// If there are no errors, send the email
 		if ($errName == '' && $errEmail == '' && $errMessage == '') {
-			if (mail ($to, $subject, $body)) {
+			if (mail($to, $subject, $body, "From: $from <$email_from>")) {
 				$result='<div class="uk-alert-success" uk-alert>Thank you for contacting us! We will be in touch with you very soon.</div>';
 			} else {
 				$result='<div class="uk-alert-warning" uk-alert>Sorry! There was an error sending your message. Please try again.</div>';
@@ -54,13 +61,13 @@
 	<title>Kayumanggi Foods</title>
 
 	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="../css/uikit.min.css"/>
-	<link rel="stylesheet" href="../css/styles.css"/>
+	<link rel="stylesheet" href="/css/uikit.min.css"/>
+	<link rel="stylesheet" href="/css/styles.css"/>
 </head>
 
 <body>
 	<!-- NAVBAR -->
-	<div id="navbar-frame"></div>
+	<?php include '../kayumanggi-navbar.php'; ?>
 
 	<!-- BANNER 1 -->
 	<div class="banner">
@@ -74,7 +81,7 @@
 			<div class="location-card">
 		        <div class="uk-card uk-card-default uk-card-small uk-width-large">
 		            <div class="uk-card-media-top">
-		                <img src="../assets/img/alaminos-branch.jpg" alt="">
+		                <img src="/assets/img/alaminos-branch.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body">
 		                <h3 class="uk-card-title">Alaminos, Laguna Branch</h3>
@@ -87,7 +94,7 @@
 	    	<div class="location-card">
 		        <div class="uk-card uk-card-default uk-card-small uk-width-large">
 		            <div class="uk-card-media-top">
-		                <img src="../assets/img/sanpablo-branch.jpg" alt="">
+		                <img src="/assets/img/sanpablo-branch.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body">
 		                <h3 class="uk-card-title">Concepcion, San Pablo Branch</h3>
@@ -111,34 +118,34 @@
 	            <div class="uk-card-body">
 	            	<?php echo $result; ?>	
 	                <h2>Leave a message:</h2>
-	                <form class="uk-grid-small" uk-grid role="form" method="post" action="locations.php">
+	                <form class="uk-grid-small" uk-grid role="form" method="post" action="/locations">
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Name:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
 	                		<input class="uk-input" type="text" name="name" placeholder="">
-	                		<?php echo "<p class='uk-text-danger'>$errName</p>";?>
+	                		<p class='uk-text-danger'><?php echo htmlspecialchars($errName);?></p>
 	                	</div>
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Email Address:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
 	                		<input class="uk-input" type="text" name="email_from" placeholder="">
-	                		<?php echo "<p class='uk-text-danger'>$errEmail</p>";?>
+							<p class='uk-text-danger'><?php echo htmlspecialchars($errEmail);?></p>
 	                	</div>
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Subject:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
 	                		<input class="uk-input" type="text" name="subject" placeholder="">
-	                		<?php echo "<p class='uk-text-danger'>$errSubject</p>";?>
+							<p class='uk-text-danger'><?php echo htmlspecialchars($errSubject);?></p>
 	                	</div>
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Message:</h4>
 	                	</div>
 	                	<div class="uk-width-3-4@s">
 	                		<textarea class="uk-textarea" id="message-us" name="message"></textarea>
-	                		<?php echo "<p class='uk-text-danger'>$errMessage</p>";?>
+							<p class='uk-text-danger'><?php echo htmlspecialchars($errMessage);?></p>
                 		</div>
                 		<div class="uk-width-4-4@s">
 	                		<button class="uk-button uk-button-default uk-align-right" name="submit">Submit</button>
@@ -151,13 +158,13 @@
 	</section>
 
 	<!-- FOOTER -->
-	<div id="footer-frame"></div>
+	<?php include '../kayumanggi-footer.php'; ?>
 
 	<!-- UIkit JS -->
-	<script type="text/javascript" src="../js/uikit.min.js"></script>
-	<script type="text/javascript" src="../js/uikit-icons.min.js"></script>
+	<script type="text/javascript" src="/js/uikit.min.js"></script>
+	<script type="text/javascript" src="/js/uikit-icons.min.js"></script>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	<!-- <script type="text/javascript" src="/js/script.js"></script> -->
 </body>
 </html>
