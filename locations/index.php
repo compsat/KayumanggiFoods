@@ -61,13 +61,13 @@
 	<title>Kayumanggi Foods</title>
 
 	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="../css/uikit.min.css"/>
-	<link rel="stylesheet" href="../css/styles.css"/>
+	<link rel="stylesheet" href="/css/uikit.min.css"/>
+	<link rel="stylesheet" href="/css/styles.css"/>
 </head>
 
 <body>
 	<!-- NAVBAR -->
-	<div id="navbar-frame"></div>
+	<?php include '../kayumanggi-navbar.php'; ?>
 
 	<!-- BANNER 1 -->
 	<div class="banner">
@@ -81,7 +81,7 @@
 			<div class="location-card">
 		        <div class="uk-card uk-card-default uk-card-small uk-width-large">
 		            <div class="uk-card-media-top">
-		                <img src="../assets/img/alaminos-branch.jpg" alt="">
+		                <img src="/assets/img/alaminos-branch.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body">
 		                <h3 class="uk-card-title">Alaminos, Laguna Branch</h3>
@@ -94,7 +94,7 @@
 	    	<div class="location-card">
 		        <div class="uk-card uk-card-default uk-card-small uk-width-large">
 		            <div class="uk-card-media-top">
-		                <img src="../assets/img/sanpablo-branch.jpg" alt="">
+		                <img src="/assets/img/sanpablo-branch.jpg" alt="">
 		            </div>
 		            <div class="uk-card-body">
 		                <h3 class="uk-card-title">Concepcion, San Pablo Branch</h3>
@@ -118,7 +118,7 @@
 	            <div class="uk-card-body">
 	            	<?php echo $result; ?>	
 	                <h2>Leave a message:</h2>
-	                <form class="uk-grid-small" uk-grid role="form" method="post" action="locations.php">
+	                <form class="uk-grid-small" uk-grid role="form" method="post" action="/locations">
 	                	<div class="uk-width-1-4@s">
 	                		<h4>Name:</h4>
 	                	</div>
@@ -158,13 +158,13 @@
 	</section>
 
 	<!-- FOOTER -->
-	<div id="footer-frame"></div>
+	<?php include '../kayumanggi-footer.php'; ?>
 
 	<!-- UIkit JS -->
-	<script type="text/javascript" src="../js/uikit.min.js"></script>
-	<script type="text/javascript" src="../js/uikit-icons.min.js"></script>
+	<script type="text/javascript" src="/js/uikit.min.js"></script>
+	<script type="text/javascript" src="/js/uikit-icons.min.js"></script>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	<!-- <script type="text/javascript" src="/js/script.js"></script> -->
 </body>
 </html>

@@ -19,10 +19,10 @@
 	    			<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
 		        	<div class="uk-navbar-dropdown">
 		        	<ul class="uk-nav uk-navbar-dropdown-nav">
-		        		<li><a href="#">Home</a></li>
-		        		<li><a href="pages/our-company.php">Company</a></li>
-		        		<li><a href="pages/our-products.php">Products</a></li>
-						<li><a href="pages/locations.php">Locations</a></li>
+		        		<li><a href="/">Home</a></li>
+		        		<li><a href="/our-company">Company</a></li>
+		        		<li><a href="/our-products">Products</a></li>
+						<li><a href="/locations">Locations</a></li>
 		        	</ul>
 		        	</div>
 	    		</li>
@@ -39,15 +39,15 @@
 			<div class="uk-navbar-center">
 				<div class="uk-navbar-center-left"><div>
 					<ul class="uk-navbar-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="pages/our-company.php">Company</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/our-company">Company</a></li>
 					</ul>
 				</div></div>
 				<a href="#" class="uk-navbar-item uk-logo"><img id="logo" src="assets/img/logo-border.png"></a>
 				<div class="uk-navbar-center-right"><div>
 					<ul class="uk-navbar-nav">
-						<li><a href="pages/our-products.php">Products</a></li>
-						<li><a href="pages/locations.php">Locations</a></li>
+						<li><a href="/our-products">Products</a></li>
+						<li><a href="/locations">Locations</a></li>
 					</ul>
 				</div></div>
 			</div>
@@ -74,7 +74,7 @@
 		                <p>Know more about Kayumanggi Tropical Foods Inc.</p>
 		            </div>
 		            <div class="uk-card-footer">
-				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-company.php">Learn More</a>
+				        <a class="uk-button uk-button-default uk-align-center" href="/our-company">Learn More</a>
 				    </div>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 		                <p>Discover Kayumanggi’s full line of fruit preserves and food products.</p>
 		            </div>
 		            <div class="uk-card-footer">
-				        <a class="uk-button uk-button-default uk-align-center" href="pages/our-products.php">Learn More</a>
+				        <a class="uk-button uk-button-default uk-align-center" href="/our-products">Learn More</a>
 				    </div>
 				</div>
 			</div>
@@ -104,7 +104,7 @@
 		                <p>Know more about our store locations and contact us!</p>
 		            </div>
 		            <div class="uk-card-footer">
-				        <a class="uk-button uk-button-default uk-align-center" href="pages/locations.php">Learn More</a>
+				        <a class="uk-button uk-button-default uk-align-center" href="/locations">Learn More</a>
 				    </div>
 				</div>
 			</div>

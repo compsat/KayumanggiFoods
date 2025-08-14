@@ -6,47 +6,47 @@
 	<title>Kayumanggi Foods</title>
 
 	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="../css/uikit.min.css"/>
-	<link rel="stylesheet" href="../css/styles.css"/>
+	<link rel="stylesheet" href="/css/uikit.min.css"/>
+	<link rel="stylesheet" href="/css/styles.css"/>
 </head>
 
 <body>
 	<!-- NAVBAR -->
-	<div id="navbar-frame"></div>
+	<?php include '../kayumanggi-navbar.php'; ?>
 
 	<!-- CAROUSEL -->
 	<div uk-slideshow="ratio: 7:3.5; animation: fade; autoplay: true; autoplay-interval: 5000; pause-on-hover: false">
 		<div class="uk-position-relative uk-visible-toggle uk-light">
 		    <ul class="uk-slideshow-items">
 		        <li>
-		            <img src="../assets/img/company-1.jpg" alt="" uk-cover>
+		            <img src="/assets/img/company-1.jpg" alt="" uk-cover>
 		        </li>
 		        <li>
-		            <img src="../assets/img/company-2.jpg" alt="" uk-cover>
+		            <img src="/assets/img/company-2.jpg" alt="" uk-cover>
 		        </li>
 		        <li>
-		            <img src="../assets/img/company-3.jpg" alt="" uk-cover>
+		            <img src="/assets/img/company-3.jpg" alt="" uk-cover>
 		        </li>
 		        <li>
-		            <img src="../assets/img/company-4.jpg" alt="" uk-cover>
+		            <img src="/assets/img/company-4.jpg" alt="" uk-cover>
 		        </li>
 		        <li>
-		            <img src="../assets/img/company-5.jpg" alt="" uk-cover>
+		            <img src="/assets/img/company-5.jpg" alt="" uk-cover>
 		        </li>
 		        <li>
-		            <img src="../assets/img/company-6.jpg" alt="" uk-cover>
+		            <img src="/assets/img/company-6.jpg" alt="" uk-cover>
 		        </li>
 		    </ul>
 		    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
 		    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 		    <div class="uk-position-bottom-center uk-position-small uk-visible@m">
 	            <ul class="uk-thumbnav">
-	                <li uk-slideshow-item="0"><a href="#"><img src="../assets/img/company-1.jpg" width="100" alt=""></a></li>
-	                <li uk-slideshow-item="1"><a href="#"><img src="../assets/img/company-2.jpg" width="100" alt=""></a></li>
-	                <li uk-slideshow-item="2"><a href="#"><img src="../assets/img/company-3.jpg" width="100" alt=""></a></li>
-	                <li uk-slideshow-item="3"><a href="#"><img src="../assets/img/company-4.jpg" width="100" alt=""></a></li>
-	                <li uk-slideshow-item="4"><a href="#"><img src="../assets/img/company-5.jpg" width="100" alt=""></a></li>
-	                <li uk-slideshow-item="5"><a href="#"><img src="../assets/img/company-6.jpg" width="100" alt=""></a></li>
+	                <li uk-slideshow-item="0"><a href="#"><img src="/assets/img/company-1.jpg" width="100" alt=""></a></li>
+	                <li uk-slideshow-item="1"><a href="#"><img src="/assets/img/company-2.jpg" width="100" alt=""></a></li>
+	                <li uk-slideshow-item="2"><a href="#"><img src="/assets/img/company-3.jpg" width="100" alt=""></a></li>
+	                <li uk-slideshow-item="3"><a href="#"><img src="/assets/img/company-4.jpg" width="100" alt=""></a></li>
+	                <li uk-slideshow-item="4"><a href="#"><img src="/assets/img/company-5.jpg" width="100" alt=""></a></li>
+	                <li uk-slideshow-item="5"><a href="#"><img src="/assets/img/company-6.jpg" width="100" alt=""></a></li>
 	            </ul>
 	        </div>
 		</div>
@@ -112,14 +112,14 @@
 	</div>
 
 	<!-- FOOTER -->
-	<div id="footer-frame"></div>
+	<?php include '../kayumanggi-footer.php'; ?>
 
 	<!-- UIkit JS -->
-	<script type="text/javascript" src="../js/uikit.min.js"></script>
-	<script type="text/javascript" src="../js/uikit-icons.min.js"></script>
+	<script type="text/javascript" src="/js/uikit.min.js"></script>
+	<script type="text/javascript" src="/js/uikit-icons.min.js"></script>
 
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/script.js"></script>
+	<!-- <script type="text/javascript" src="/js/script.js"></script> -->
 </body>
 
 </html>

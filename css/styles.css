@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Goudy Old Style";
-    src: url("../assets/font/GOUDOS.TTF");
+    src: url("/assets/font/GOUDOS.TTF");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Goudy Old Style";
-    src: url("../assets/font/GOUDOSB.TTF");
+    src: url("/assets/font/GOUDOSB.TTF");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Goudy Old Style";
-    src: url("../assets/font/GOUDOSI.TTF");
+    src: url("/assets/font/GOUDOSI.TTF");
     font-weight: normal;
     font-style: italic;
 }
@@ -25,7 +25,7 @@ html {
 
 body {
 	background-color: #fff2db;
-	background-image: url("../assets/img/banig-bg-new.jpg");
+	background-image: url("/assets/img/banig-bg-new.jpg");
 	background-position: bottom left;
 	background-repeat: repeat;
 	background-attachment: fixed;
@@ -51,7 +51,7 @@ p {
 }
 
 .uk-divider-icon {
-	background-image: url("../assets/img/div-icon.svg");
+	background-image: url("/assets/img/div-icon.svg");
 }
 
 .uk-divider-icon::after, .uk-divider-icon::before {
